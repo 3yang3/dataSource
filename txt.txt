@@ -1,0 +1,96 @@
+        <property>
+                <name>dfs.replication</name>
+                <value>3</value>
+        </property>
+
+        <property>
+                <name>dfs.nameservices</name>
+                <value>mycluster</value>
+        </property>
+		
+        <property>
+                <name>dfs.ha.namenodes.mycluster</name>
+                <value>nn1,nn2</value>
+        </property>
+		
+        <property>
+                <name>dfs.namenode.rpc-address.mycluster.nn1</name>
+                <value>HAMaster001:9000</value>
+        </property>
+
+
+        <property>
+                <name>dfs.namenode.rpc-address.mycluster.nn2</name>
+                <value>HAMaster002:9000</value>
+        </property>
+		
+        <property>
+                <name>dfs.namenode.http-address.mycluster.nn1</name>
+                <value>HAMaster001:50070</value>
+        </property>
+        <property>
+                <name>dfs.namenode.http-address.mycluster.nn2</name>
+                <value>HAMaster002:50070</value>
+        </property>
+        <property>
+                <name>dfs.namenode.shared.edits.dir</name>
+                <value>qjournal://HASlave001:8485;HASlave002:8485;HASlave003:8485/QJCluster</value>
+        </property>
+        <property>
+                <name>dfs.journalnode.edits.dir</name>
+                <value>/home/hadoop/software/hadoop-2.9.2/QJEditsData</value>
+        </property>
+		
+        <property>
+                <name>dfs.ha.automaic-failover.enabled</name>
+                <value>true</value>
+        </property>
+        <property>
+                <name>dfs.client.failover.proxy.provider.mycluster</name>
+                <value>org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</value>
+        </property>
+		
+        <property>
+                <name>dfs.ha.fencing.methods</name>
+                <value>
+					sshfence 
+					shell(/home/hadoop/software/hadoop-2.9.2/ensure.sh)
+				</value>
+        </property>
+
+        <property>
+                <name>dfs.ha.fencing.ssh.private-key-files</name>
+                <value>/home/hadoop/.ssh/id_rsa</value>
+        </property>		
+
+        <property>
+                <name>dfs.ha.fencing.ssh.connect-timeout</name>
+                <value>30000</value>
+        </property>		
+
+https://www.doc88.com/p-902567425519.html
+https://www.doc88.com/p-3942167257638.html
+https://www.doc88.com/p-3942167257638.html
+https://www.doc88.com/p-3942167257638.html
+https://www.doc88.com/p-3942167257638.html
+http://kns.cnki.net//KXReader/Detail?TIMESTAMP=637136560853752500&DBCODE=CJFQ&TABLEName=CJFD2009&FileName=WJSJ200920098&RESULT=1&SIGN=92CKSmHaIc4a%2bkTJZrxVHK1xtjs%3d
+
+
+数字信号处理
+考试 40
+mooc 20
+学习通 20  =  作业 75 + 签到15 + 讨论 10
+实验 20
+
+5.18  第十三周开始
+
+9815445
+
+4603914
+
+信息论实验 97
+
+
+
+
+
